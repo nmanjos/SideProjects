@@ -1,0 +1,27 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>System List</h2>
+        <h1>{{ syscount }}</h1>
+        {% for sys in system_list %}
+           <p> <a href="{% url 'system-detail' sys.id %}">{{ sys.name }}</a> </p>
+        {% endfor%}
+        {% if is_paginated %}
+
+            {% if page_obj.has_previous %}
+                <a href="/systems/?page={{ page_obj.previous_page_number }}">Previous</a>
+        
+            {% endif %}
+            {% if page_obj.has_next %}
+                <a href="/systems/?page={{ page_obj.next_page_number }}">Next</a>
+        
+            {% endif %}
+
+        {% endif %}
+     </div>
+</div>
+
+{% endblock %}

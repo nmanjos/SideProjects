@@ -1,0 +1,16 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>{{ object.name }}</h2>
+        <table classe ="table">
+           
+            <tr><td>{{ System.id }}</td><td>{{ System.name }}</td><td>{{ System.govtype }}</td><td>{{ System.population }}</td></tr> 
+            
+        </table>
+     </div>
+</div>
+
+{% endblock %}

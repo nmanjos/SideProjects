@@ -1,0 +1,19 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+    <h1>{{ govtype.type }}</h1>
+    <ul>
+        <li>{{ govtype.id }}</li>
+        <li>{{ govtype.game_id }}</li>
+        <li>{{ govtype.type }}</li>
+        <li>{{ govtype.description }}</li>
+       
+       
+    </ul>
+
+   
+
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+    
+{% endblock %}

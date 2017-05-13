@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\preview\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate\bin\Debug\edbgsupdate.exe">
+   <Modules>
+    <Module Name="edbgsupdate.exe">
+     <Namespaces>
+      <Namespace Name="edbgsupdate">
+       <Types>
+        <Type Name="EDDNListener" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Subscribe()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="EDDNListener.cs" Line="113">Object 'ms' can be disposed more than once in method 'EDDNListener.Subscribe()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 113, 114</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="EDDNListener.cs" Line="113">Object 'stream' can be disposed more than once in method 'EDDNListener.Subscribe()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 113</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#CheckExists(MySql.Data.MySqlClient.MySqlConnection,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="160">Object 'reader' can be disposed more than once in method 'Program.CheckExists(MySqlConnection, string, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 160</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="147">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'Program.CheckExists(MySqlConnection, string, string)' could contain the following variables 'table', 'whereclause'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FetchID(MySql.Data.MySqlClient.MySqlConnection,System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="140">Object 'reader' can be disposed more than once in method 'Program.FetchID(MySqlConnection, string, string, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 140</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="127">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'Program.FetchID(MySqlConnection, string, string, string)' could contain the following variables 'table', 'fieldname'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#HistoryUpdate()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="497">Object 'conn' can be disposed more than once in method 'Program.HistoryUpdate()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 497</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsNewRec(MySql.Data.MySqlClient.MySqlConnection,System.String,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="282">Object 'reader' can be disposed more than once in method 'Program.IsNewRec(MySqlConnection, string, int)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 282</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="277">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'Program.IsNewRec(MySqlConnection, string, int)' could contain the following variables 'table', 'id'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LastID(MySql.Data.MySqlClient.MySqlConnection,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="180">Object 'reader' can be disposed more than once in method 'Program.LastID(MySqlConnection, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 180</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="167">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'Program.LastID(MySqlConnection, string)' could contain the following variables 'table'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MySqlInsert(MySql.Data.MySqlClient.MySqlConnection,System.String,System.String[],System.String[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="212">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'Program.MySqlInsert(MySqlConnection, string, string[], string[])' could contain the following variables 'table', 'fields[i]', 'fields[i]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MySqlUpdate(MySql.Data.MySqlClient.MySqlConnection,System.String,System.String[],System.String[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="261">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'Program.MySqlUpdate(MySqlConnection, string, string[], string[])' could contain the following variables 'table', 'fields[i]', 'fields[0]', 'fields[0]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadCSVFile()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="555">Object 'fs' can be disposed more than once in method 'Program.ReadCSVFile()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 555</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetConsoleCtrlHandler(edbgsupdate.Program+EventHandler,System.Boolean)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'Program.SetConsoleCtrlHandler(Program.EventHandler, bool)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateFactions()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="399">Object 'conn' can be disposed more than once in method 'Program.UpdateFactions()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 399</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateSystems()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="343">Object 'conn' can be disposed more than once in method 'Program.UpdateSystems()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 343</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteJsonFile(System.String[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-05-05 23:40:59Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\nanjo\documents\visual studio 2017\Projects\edbgsupdate\edbgsupdate" File="Program.cs" Line="93">Object 'fs' can be disposed more than once in method 'Program.WriteJsonFile(string[])'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 93</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 555</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>Move P/Invokes to NativeMethods class</Name>
+   <Description>This type contains members with the DllImport attribute. Members with the DllImport attribute should be contained in classes named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Description>
+   <Resolution Name="Default">Because it is a P/Invoke method, {0} should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182161.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

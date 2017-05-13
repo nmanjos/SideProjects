@@ -1,0 +1,1 @@
+SELECT app_fhist.Datecycle,app_fhist.fhInfluence,app_fstate.name as State,app_system.name FROM app_fstate,app_system,app_fhist,app_faction where app_fhist.fhState_id=app_fstate.id and app_system.id=app_fhist.fhSystem_id and app_fhist.fhFaction_id=app_faction.id and app_faction.name = 'The White Templars' order by app_system.name,Datecycle

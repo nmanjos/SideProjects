@@ -1,0 +1,5 @@
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

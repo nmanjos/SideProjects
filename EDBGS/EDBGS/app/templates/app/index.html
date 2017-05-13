@@ -1,0 +1,16 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>{{ body_title }}</h2>
+        <table classe ="table">
+            {% for instance in queryset %}
+            <tr><td>{{ instance.type }}</td></tr> 
+            {% endfor%}
+        </table>
+     </div>
+</div>
+
+{% endblock %}

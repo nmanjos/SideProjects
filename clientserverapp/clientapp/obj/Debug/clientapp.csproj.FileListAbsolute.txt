@@ -1,0 +1,9 @@
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\clientapp\obj\Debug\clientapp.csprojResolveAssemblyReference.cache
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\clientapp\obj\Debug\clientapp.Form1.resources
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\clientapp\obj\Debug\clientapp.Properties.Resources.resources
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\clientapp\obj\Debug\clientapp.csproj.GenerateResource.Cache
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\clientapp\bin\Debug\clientapp.exe.config
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\clientapp\bin\Debug\clientapp.exe
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\clientapp\bin\Debug\clientapp.pdb
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\clientapp\obj\Debug\clientapp.exe
+C:\Users\nanjo\Documents\Visual Studio 2017\Projects\clientserverapp\clientapp\obj\Debug\clientapp.pdb
